@@ -1,0 +1,1 @@
+cat ./frankenstein.txt | grep -B 43 "Letter 3" | tr "[:space:][:punct:][:digit:]" "\n" | sort | uniq -c | sort | tail -11 | head -10;
